@@ -27,7 +27,7 @@
 
 <body>
   <header id="header">
-    <nav class="navbar navbar-fixed-top" role="banner">
+    <nav class="navbar navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -41,7 +41,7 @@
         </div>
         <div class="collapse navbar-collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li class="active"><li><%= link_to 'Home', wichacks2020_index_path %></li></li>
+            <li class="active"><%= link_to 'Home', wichacks2020_index_path %></li>
             <li><a href="#our-team">Our Team</a></li>
             <li><%= link_to 'New Buisness Post', new_article_path %></li>
             <li><%= link_to 'View Buisnesses', articles_path %></li>
@@ -49,10 +49,12 @@
           </ul>
         </div>
       </div>
+    
       <!--/.container-->
     </nav>
     <!--/nav-->
   </header>
+
   <!--/header-->
   <div class="slider">
     <div id="about-slider">
@@ -110,7 +112,7 @@
       <div class="row">
         <div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
           <div class="align">
-            <%= image_tag( "img/team/1.png")%>
+            <%= image_tag( "img/sakai.jpg")%>
             <h2>Sakai Alexander</h2>
             <h4>Creative Hacker - Front End</h4>
             <ul style="list-style-type:square;">
@@ -122,7 +124,7 @@
         </div>
         <div class="col-md-4 wow bounceInDown" data-wow-offset="0" data-wow-delay="0.3s">
           <div class="align">
-            <%= image_tag( "img/team/2.png")%>
+            <%= image_tag( "img/darlene.jpg")%>
             <h2>Darlene Ardila</h2>
             <h4>Creative Hacker - Front End</h4>
             <ul style="list-style-type:square;">
@@ -134,7 +136,7 @@
         </div>
         <div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
           <div class="align">
-            <%= image_tag( "img/team/3.png")%>
+            <%= image_tag( "img/allie.jpg")%>
             <h2>Allie Jankowski</h2>
             <h4>Creative Hacker - Front End</h4>
             <ul style="list-style-type:square;">
@@ -145,7 +147,7 @@
           </div>
         <div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
           <div class="align">
-            <%= image_tag( "img/team/3.png")%>
+            <%= image_tag( "img/sam.jpg")%>
             <h2>Sam McQuate</h2>
             <h4>Creative Hacker - Back End</h4>
             <ul style="list-style-type:square;">
