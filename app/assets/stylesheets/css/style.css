@@ -771,7 +771,9 @@ figure.effect-chico:hover img {
 #our-team h4 {
 	color:#0BA9F9;
 }
-
+.align {
+    text-align: left;
+}
 
 #our-team .team img {
 	border-radius:8px;
