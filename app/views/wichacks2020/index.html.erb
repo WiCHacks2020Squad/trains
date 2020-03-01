@@ -357,10 +357,22 @@
           <div class="col-md-12">
             <form class="form-inline">
               <div class="form-group">
-                <button type="purchase" name="purchase" class="btn btn-primary btn-lg" required="required">Enter Your Email</button>
-              </div>
-              <div class="form-group">
-                <button type="subscribe" name="subscribe" class="btn btn-primary btn-lg" required="required">Subscribe Now</button>
+              
+<%= form_with scope: :article, url: articles_path, local: true do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= form.label :text %><br>
+    <%= form.text_area :text %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
               </div>
             </form>
           </div>
