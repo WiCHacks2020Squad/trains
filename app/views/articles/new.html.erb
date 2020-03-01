@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Bikin - HTML Bootstrap Template</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/overwrite.css">
+  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <%= stylesheet_link_tag "application.css" %>
+
+  <!-- =======================================================
+    Theme Name: Bikin
+    Theme URL: https://bootstrapmade.com/bikin-free-simple-landing-page-template/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+  <header id="header">
+    <nav class="navbar navbar-fixed-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+          <a class="navbar-brand" href="index.html">Bikin</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#header">Home</a></li>
+            <li><a href="#feature">Feature</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#pricing">Price & Plan</a></li>
+            <li><a href="#our-team">Our Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--/.container-->
+    </nav>
+    <!--/nav-->
+  </header>
+  <!--/header-->
+  <div class="slider">
+    <div id="about-slider">
+      <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators visible-xs">
+          <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-slider" data-slide-to="1"></li>
+          <li data-target="#carousel-slider" data-slide-to="2"></li>
+        </ol>
+
+
+    <!--/#contact-->
+    <div class="container">
+      <div class="sub-footer">
+        <div class="text-center">
+          <div class="col-md-12">
+            <form class="form-inline">
+              <div class="form-group">
+              <h1>Add A New Buisness</h1>
+                <%= form_with scope: :article, url: articles_path, local: true do |form| %>
+                <p>
+                    <%= form.label :title , 'Buisness Name' %><br>
+                    <%= form.text_field :title %>
+                </p>
+                
+                <p>
+                    <%= form.label :text , 'Idea' %><br>
+                    <%= form.text_area :text %>
+                </p>
+                <p>
+                    <%= form.label :text, 'Name' %><br>
+                    <%= form.text_area :text %>
+                </p>
+                <p>
+                    <%= form.label :text, 'Contact information' %><br>
+                    <%= form.text_area :text %>
+                </p>
+                
+                <p>
+                    <%= form.submit %>
+                </p>
+                <% end %>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+</body>
+
+</html>
