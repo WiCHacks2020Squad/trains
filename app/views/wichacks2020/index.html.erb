@@ -42,6 +42,8 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#header">Home</a></li>
             <li><a href="#our-team">Our Team</a></li>
+            <li><%= link_to 'New Buisness Post', new_article_path %></li>
+            <li><%= link_to 'View Buisnesses', articles_path %></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -263,22 +265,6 @@
           <div class="col-md-12">
             <form class="form-inline">
               <div class="form-group">
-              
-<%= form_with scope: :article, url: articles_path, local: true do |form| %>
-  <p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
-  </p>
- 
-  <p>
-    <%= form.label :text %><br>
-    <%= form.text_area :text %>
-  </p>
- 
-  <p>
-    <%= form.submit %>
-  </p>
-<% end %>
               </div>
             </form>
           </div>

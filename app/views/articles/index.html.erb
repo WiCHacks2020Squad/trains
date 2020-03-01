@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,32 +73,27 @@
           <div class="col-md-12">
             <form class="form-inline">
               <div class="form-group">
-              <h1>Add A New Buisness</h1>
-                <%= form_with scope: :article, url: articles_path, local: true do |form| %>
-                <p>
-                    <%= form.label :title , 'Buisness Name' %><br>
-                    <%= form.text_field :title %>
-                </p>
-                
-                <p>
-                    <%= form.label :text , 'Idea' %><br>
-                    <%= form.text_area :text %>
-                </p>
-                <p>
-                    <%= form.label :name, 'Name' %><br>
-                    <%= form.text_field :name %>
-                </p>
-                <p>
-                    <%= form.label :contact, 'Contact information' %><br>
-                    <%= form.text_field :contact %>
-                </p>
-                
-                <p>
-                    <%= form.submit %>
-                </p>
-                <% end %>
+              
 
-                <%= link_to 'Back', articles_path %>
+                <table>
+                <tr>
+                    <th>Buisness Name </th>
+                    <th>Idea </th>
+                    <th>Buisness Owner </th>
+                    <th>Contact </th>
+                    <th></th>
+                </tr>
+                
+                <% @articles.each do |article| %>
+                    <tr>
+                    <td><%= article.title %></td>
+                    <td><%= article.text %></td>
+                    <td><%= article.name %></td>
+                    <td><%= article.contact %></td>
+                    <td><%= link_to 'Show', article_path(article) %></td>
+                    </tr>
+                <% end %>
+                </table>
               </div>
             </form>
           </div>
