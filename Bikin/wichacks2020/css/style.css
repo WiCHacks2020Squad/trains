@@ -181,8 +181,8 @@ hr {
 }
 
 .navbar-fixed-top .navbar-nav > li > a:hover{
-	background: #0BA9F9;
-	color:#fff;
+	background: #9D79BC;
+	color:#FF979C;
 }
 
 .navbar-fixed-top {
@@ -193,7 +193,7 @@ hr {
 .navbar-fixed-top .navbar-brand {
   font-size: 36px;
   line-height: 50px;
-  color: #fff;
+  color: #FF979C;
 }
 
 .navbar-fixed-top .navbar-nav > .active > a,
@@ -202,8 +202,8 @@ hr {
 .navbar-fixed-top .navbar-nav > .open > a,
 .navbar-fixed-top .navbar-nav > .open > a:hover,
 .navbar-fixed-top .navbar-nav > .open > a:focus {
-  background-color: #2bb8ff;
-  color: #fff;
+  background-color: #9D79BC;
+  color: #FF979C;
 }
 
 /*************************
@@ -284,7 +284,7 @@ hr {
 
 .carousel-caption  h2 {
 	font-size:60px;
-	color: #0BA9F9;
+	color: #67597A;
 }
 
 .carousel-caption  h2 span {
@@ -303,12 +303,12 @@ hr {
 .carousel-inner .form-inline .form-group button[type="livedemo"]{
 	padding:20px 60px;
 	font-size:25px;
-	background:#0BA9F9;
+	background:#67597A;
 	color:#fff;
 }
 
 .carousel-inner .form-inline .form-group button[type="livedemo"]:hover {
-	color:#0BA9F9;
+	color:#67597A;
 	background:#fff;
   transition:  color 300ms, background-color 300ms;
 }
@@ -317,12 +317,12 @@ hr {
 	padding:20px 60px;
 	font-size:25px;
 	background:#fff;
-	color:#0BA9F9;
+	color:#67597A;
 }
 
 .carousel-inner .form-inline .form-group button[type="getnow"]:hover {
 	color:#fff;
-	background:#0BA9F9;
+	background:#67597A;
   transition:  color 300ms, background-color 300ms;
 }
 
@@ -420,7 +420,7 @@ hr {
 
 .hi-icon-effect i.fa:hover {
 	background:#fff;
-	color: #0BA9F9;
+	color: #67597A;
 	-webkit-transition: color 300ms, background-color 300ms;
   -moz-transition: color 300ms, background-color 300ms;
   -o-transition:  color 300ms, background-color 300ms;
@@ -433,7 +433,7 @@ hr {
 	margin-bottom:30px;
 	color:#fff;
 	padding:50px;
-	background:#0BA9F9;
+	background:#67597A;
 	border-radius:50%;
 }
 .text-center h2 {
@@ -514,12 +514,12 @@ figure.effect-chico:hover img {
 	padding:20px 90px;
 	font-size:20px;
 	background:#fff;
-	color:#0BA9F9;
-	border-color: #0BA9F9;
+	color:#67597A;
+	border-color: #67597A;
 }
 
 .sub-parallax .form-inline .form-group button[type="purchase"]:hover {
-	background:#0BA9F9;
+	background:#67597A;
 	color:#fff;
 	-webkit-transition: color 300ms, background-color 300ms;
   -moz-transition: color 300ms, background-color 300ms;
@@ -534,7 +534,7 @@ figure.effect-chico:hover img {
 
 .sub-parallax .form-inline .form-group button[type="subscribe"]:hover {
 	background:#fff;
-	color:#0BA9F9;
+	color:#67597A;
 	-webkit-transition: color 300ms, background-color 300ms;
   -moz-transition: color 300ms, background-color 300ms;
   -o-transition:  color 300ms, background-color 300ms;
